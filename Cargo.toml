@@ -1,0 +1,19 @@
+[package]
+name = "intercessor"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper-reverse-proxy = "0.5.0"
+hyper = { version = "0.14.0", features = ["full"] }
+tokio = { version = "1.24.1", features = ["full"] }
+lazy_static = "1.4.0"
+hyper-trust-dns = { version = "0.5.0", features = [
+  "rustls-http2",
+  "dnssec-ring",
+  "dns-over-https-rustls",
+  "rustls-webpki",
+  "https-only"
+] }

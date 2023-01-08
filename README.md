@@ -1,1 +1,2 @@
 # Intercessor
+Most systems need a proxy, or a way to route traffic in intelligent ways. `Intercessor` is dynamic, and can be managed through it's configuration interface. It's small light weight written in fully safe `rust` code and uses `hyper`, and `tokio`.
