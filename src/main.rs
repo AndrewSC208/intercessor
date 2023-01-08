@@ -1,8 +1,6 @@
 use hyper::server::conn::AddrStream;
 use hyper::service::{make_service_fn, service_fn};
 use hyper::{Body, Request, Response, Server, StatusCode};
-use hyper_trust_dns::{RustlsHttpsConnector, TrustDnsResolver};
-use hyper_reverse_proxy::ReverseProxy;
 use std::net::IpAddr;
 use std::{convert::Infallible, net::SocketAddr};
 
